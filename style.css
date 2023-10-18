@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.764); /* Set the background color to transparent */
+  }
+  
+
+.navbar {
+  width: 100vw;
+  height: 15vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 5px;
+}
+
+.image-background {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: cyan;
+}
+
+.image-background img {
+  width: 8.6rem;
+  height: 8.6rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 8rem;
+  font-size: 2rem;
+}
+
+.nav-items {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Urbanist", sans-serif;
+  transition: all 0.4s linear;
+}
+
+#Home {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.about-me .my-name {
+  text-transform: uppercase;
+  font-family: "Gabarito", sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-me .brief-description {
+  font-size: 2.3rem;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+.about-me .btn {
+  background-color: cyan;
+  margin-top: 1.5rem;
+  width: 25rem;
+  height: 4rem;
+  border-radius: 4px;
+  border: none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+  transition: all 0.4s linear;
+}
+
+.btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-items:hover {
+  background-color: red;
+  font-weight: 900;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.about-me .btn:hover {
+  background-color: yellow;
+}
+
+@media (max-width: 870px) {
+  .left {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .image-background {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .image-background img {
+    width: 4.2rem;
+    height: 4.4rem;
+  }
+
+  .right ul {
+    font-size: 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .about-me .my-name {
+    font-size: 3rem;
+  }
+
+  .about-me .brief-description {
+    font-size: 1.3rem;
+  }
+
+  .about-me .btn {
+    width: 18rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .left {
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    margin-left: 0;
+    gap: 5px;
+  }
+
+  .right {
+    margin-right: 4px;
+  }
+
+  .right ul {
+    font-size: 1rem;
+    gap: 1.5rem;
+  }
+
+  .about-me .my-name {
+    font-size: 2rem;
+  }
+
+  .about-me .brief-description {
+    font-size: 0.8rem;
+    text-align: ;
+  }
+
+  .about-me .btn {
+    width: 10rem;
+    height: 1;
+    font-size: 1rem;
+  }
+
+  .btn a {
+    letter-spacing: 5px;
+    text-align: center;
+  }
+}
+
+#About {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.764);
+}
+
+.about-container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.5;
+  font-family: "Urbanist", sans-serif;
+  overflow: hidden;
+}
+
+.about-container h3 {
+  color: cyan;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+.about-container p {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 710px) {
+  .about-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+
+    .about-container{
+        justify-content:space-evenly;
+    }
+
+  .about-container h3 {
+    font-size: 1rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+}
